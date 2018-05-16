@@ -1,0 +1,1261 @@
+/*
+@keyframes snow_preload_geader {
+ 0% {background-position: 0px 0px, -200px -200px, -100px -100px;opacity: 1;}
+  90% {opacity: 0.5;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;opacity: 0;}
+}
+ 
+@-moz-keyframes snow_left_geader {
+   0% {background-position: 0px 0px, -200px -200px, -100px -100px;opacity: 1;}
+  90% {opacity: 0.5;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;opacity: 0;}
+}
+ 
+@-webkit-keyframes snow_left_geader {
+   0% {background-position: 0px 0px, -200px -200px, -100px -100px;opacity: 1;}
+  90% {opacity: 0.5;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;opacity: 0;}
+}
+ 
+@-ms-keyframes snow_left_geader {
+ 0% {background-position: 0px 0px, -200px -200px, -100px -100px;opacity: 1;}
+  50% {opacity: 0.5;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;opacity: 0;}
+}
+*/
+
+
+
+@keyframes snow_left_geader {
+ 0% {background-position: -200px -200px, -200px -200px, -100px -100px;opacity: 1;}
+  90% {opacity: 0.5;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;opacity: 0;}
+}
+ 
+@-moz-keyframes snow_left_geader {
+  0% {background-position: -200px -200px, -200px -200px, -100px -100px;opacity: 1;}
+  90% {opacity: 0.5;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;opacity: 0;}
+}
+ 
+@-webkit-keyframes snow_left_geader {
+  0% {background-position: -200px -200px, -200px -200px, -100px -100px;opacity: 1;}
+  90% {opacity: 0.5;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;opacity: 0;}
+}
+ 
+@-ms-keyframes snow_left_geader {
+ 0% {background-position: -200px -200px, -200px -200px, -100px -100px;opacity: 1;}
+  50% {opacity: 0.5;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;opacity: 0;}
+}
+
+
+@keyframes snow_right_geader {
+ 0% {background-position: 150% 0px, 120% 0px, 170% 0px;}
+  50% {opacity: 0.5;}
+ 100% {background-position: 500px 1800px, 100px 600px, 200px 600px;opacity: 0;}
+}
+ 
+@-moz-keyframes snow_right_geader {
+ 0% {background-position: 100% 0px, 0px 0px, 0px 0px;}
+  50% {opacity: 0.5;}
+  100% {background-position: 500px 400px, 400px 1000px, 300px 300px;opacity: 0;}
+}
+ 
+@-webkit-keyframes snow_right_geader {
+0% {background-position: 100% 0px, 0px 0px, 0px 0px;}
+ 50% {opacity: 0.5;}
+  100% {background-position: 500px 400px, 400px 1000px, 300px 300px;opacity: 0;}
+}
+ 
+@-ms-keyframes snow_right_geader {
+ 0% {background-position: 100% 0px, 0px 0px, 0px 0px;}
+  50% {opacity: 0.5;}
+ 100% {background-position: 500px 400px, 400px 1000px, 300px 300px;opacity: 0;}
+}
+
+
+.overflow{
+	overflow: hidden;
+}
+
+.loaderArea{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: #fff;
+	z-index: 1000;
+	text-align: center;
+	vertical-align: middle;
+	/*background-image: url('../img/petal1.png'), url('../img/petal3.png'), url('../img/petal4.png');
+	background-repeat: no-repeat;
+	-webkit-animation: snow_preload_geader 5s linear infinite;
+	-moz-animation: snow_preload_geader 5s linear infinite;
+	-ms-animation: snow_preload_geader 5s linear infinite;
+	animation: snow_preload_geader 5s linear infinite;*/
+	img{
+		max-width: 20%;
+		margin-top: 20%;
+	}
+}
+
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+
+header{
+	background-image: url("../img/landscape.jpg");
+	background-size: cover;
+	background-position: top;
+	min-height: 80vh;
+	padding-bottom: 40px;
+	position: relative;
+	.back_call{
+		z-index: 1;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.wrapper_geader_animation{
+		position: absolute;
+		height: 75%;
+		background-image: url('../img/petal1.png'), url('../img/petal3.png'), url('../img/petal4.png');
+		background-repeat: no-repeat;
+		top: 50px;
+		.test{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 20%;
+			/*border: 1px solid red;*/
+
+			background: -moz-linear-gradient(top, rgba(249,249,249,0.72) 0%, rgba(250,250,250,0.72) 44%, rgba(252,252,252,1) 100%);
+background: -webkit-linear-gradient(top, rgba(249,249,249,0.72) 0%,rgba(250,250,250,0.72) 44%,rgba(252,252,252,1) 100%);
+background: linear-gradient(to bottom, rgba(249,249,249,0.72) 0%,rgba(250,250,250,0.72) 44%,rgba(252,252,252,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8f9f9f9', endColorstr='#fcfcfc',GradientType=0 );
+
+		}
+	}
+
+	.wrapper_geader_animation1{
+		left: 0;
+		width: 30%;
+		-webkit-animation: snow_left_geader 20s linear infinite;
+		 -moz-animation: snow_left_geader 20s linear infinite;
+		 -ms-animation: snow_left_geader 20s linear infinite;
+		 animation: snow_left_geader 20s linear infinite;
+	}
+
+	.wrapper_geader_animation2{
+		right: 0;
+		width: 25%;
+		-webkit-animation: snow_right_geader 20s linear infinite;
+		 -moz-animation: snow_right_geader 20s linear infinite;
+		 -ms-animation: snow_right_geader 20s linear infinite;
+		 animation: snow_right_geader 20s linear infinite;
+	}
+
+	nav{
+		background-color: rgba(20, 147, 224, .6);
+		padding: 15px 0 15px 0;
+		max-height: 60px;
+		img.logo{
+			max-width: 100px;
+		}
+		span{
+			color: #fff;
+		}
+		.callback{
+			a{
+				text-decoration: none;
+				color: #fff;
+			}
+			span.nav_callback{
+				margin-right: 10px;
+				font-size: 26px;
+				float: left;
+			}
+			p{
+				font-size: 12px;
+				line-height: 12px;
+				margin-top: 8px;
+			}
+		}
+		.callmy{
+			span{
+				font-size: 17px;
+			    margin-top: 10px;
+			    display: block;
+			    i{
+			    	margin-right: 10px;
+			    }
+			}
+		}
+	}
+
+	.header_content{
+		padding-top: 50px;
+		.col-md-1{
+			margin-top: 42%;
+			.img291m{
+				margin-left: 70px;
+				max-width: 85px;
+				min-width: 85px;
+			}
+		}
+		img.header_water_img{
+			max-width: 88%;
+		}
+		.water_deck_title{
+			margin-top: 22%;
+			margin-left: -50px;
+			img.logo_blue{
+				max-width: 260px;
+				margin-bottom: 20px;
+				margin-left: -20px;
+			}
+			button.Order_water{
+				color: #fff;
+				border: none;
+				background-color: #1493e0;
+				padding: 15px 45px;
+				font-size: 20px;
+			}
+			p{
+				margin-bottom: 20px;
+				color: #194e9b;
+				font-size: 18px;
+			}
+		}
+	}
+	.header_full_description_water{
+		margin-top: 40px;
+		p{
+			color: #474747;
+			text-indent: 30px;
+			font-size: 15px;
+			margin: 0;
+			line-height: 23px;
+			padding-left: 15px;
+		}
+
+	}
+}
+
+
+section#Chemical_Warehouse{
+	background-image: url("../img/water.jpg");
+	background-size: cover;
+	background-position: top;
+	padding-top: 120px;
+	padding-bottom: 40px;
+	padding-bottom: 100px;
+	h1{
+		color: #fff;
+	}
+
+	img.img_molecyla{
+		width: 170px;
+		position: absolute;
+		display: block;
+		transition: all .2s;
+	}
+
+	.first_img_molecyla{
+		margin-left: 39%;
+   		margin-top: 50px;
+	}
+
+	.second_img_molecyla{
+		width: 230px !important;
+		margin-top: -70px;
+		margin-left: 80px;
+	}
+
+	.meleculy_info{
+		margin-top: 100px;
+	}
+
+	.molecula{
+		background-image: url("../img/romb.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 150px;
+		height: 150px;
+		text-align: center;
+		line-height: 150px;
+		font-size: 19px;
+		padding-left: 10px;
+		color: #194e9b;
+		transition: all .3s;
+		/*position: absolute;*/
+		sub{
+			margin-left: -12px;
+    		font-size: 11px;
+		}
+		sup{
+			font-size: 11px;
+			margin-left: -2px;
+			margin-right: 5px;
+		}
+	}
+	.col-md-2.col-md-offset-5{
+		.molecula{
+			&:nth-child(2){
+				margin-left: -70px;
+			}
+			
+		}
+	}
+
+	.right_molecul{
+		margin-left: -20px;
+		.molecula{
+			&:nth-child(2){
+				margin-left: 70px;
+			}
+			
+		}
+	}
+
+	p.chemical_signature{
+		font-size: 19px;
+		color: #fff;
+		margin-top: 50px;
+	}
+}
+
+section#Stages_of_cleaning{
+	background-image: url("../img/water2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-height: 1080px;
+	position: relative;
+	/*padding-top: 120px;*/
+	border-top: 3px solid #94d6f5;
+	h1{
+		color:#fff;
+		margin-bottom: 80px;
+		margin-top: 100px;
+	}
+	.show_mobile{
+		display: none;
+		list-style: none;
+		padding: 0;
+		p.title_li{
+			font-size: 20px;
+    		color: #fff;
+    		line-height: 24px;
+		}
+		li{
+			.title_li, .filter_deck{
+				margin-left: 85px;
+			}
+			&:before{
+				width: 70px;
+			    height: 70px;
+			    content: '';
+			    display: inline-block;
+			    position: absolute;
+			    -webkit-border-radius: 50%;
+			    border-radius: 50%;
+			    background-size: cover;
+			}
+			&:nth-child(2):before{
+				background-image: url(../img/filtr1.png);
+				background-color: red;
+			}
+		}
+	}
+
+    .show_mobile li:nth-child(3):before {
+        background-image: url(../img/filtr2.png)
+    }
+    .show_mobile li:nth-child(4):before {
+        background-image: url(../img/filrt3.png)
+    }
+    .show_mobile li:nth-child(5):before {
+        background-image: url(../img/filtr4.png)
+    }
+    .show_mobile li:nth-child(6):before {
+        background-image: url(../img/filtr5.png)
+    }
+
+    .show_mobile .line_step_ul {
+	    position: absolute;
+	    width: 3px;
+	    height: 70%;
+	    border: none;
+	    background-color: #fff;
+	    left: 49px;
+	}
+
+	/*canvas {
+	    display: block;
+	    vertical-align: bottom;
+	}*/
+
+	/* ---- particles.js container ---- */
+
+	#particles-js {
+	    position: absolute;
+	    width: 100%;
+	 	height: 100%;
+	 
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: 50% 50%;
+	}
+
+
+	/* ---- stats.js ---- */
+
+	.count-particles {
+	    background: #000022;
+	    position: absolute;
+	    top: 48px;
+	    left: 0;
+	    width: 80px;
+	    color: #13E8E9;
+	    font-size: .8em;
+	    text-align: left;
+	    text-indent: 4px;
+	    line-height: 14px;
+	    padding-bottom: 2px;
+	    font-family: Helvetica, Arial, sans-serif;
+	    font-weight: bold;
+	}
+
+	.js-count-particles {
+	    font-size: 1.1em;
+	}
+
+	#stats,
+	.count-particles {
+	    -webkit-user-select: none;
+	    margin-top: 5px;
+	    margin-left: 5px;
+	}
+
+	#stats {
+	    border-radius: 3px 3px 0 0;
+	    overflow: hidden;
+	}
+
+	.count-particles {
+	    border-radius: 0 0 3px 3px;
+	}
+
+
+	.punkt1, .img_filter{
+		width: 80px !important;
+		height: 80px !important;
+	}
+
+
+	.filter_title{
+		color: #fff;
+		font-size: 29px;
+	}
+	.filter_deck{
+		color: #fff;
+	}
+
+	.mechanical_filter{
+		position: absolute;
+		left: 185px;
+		top: 58px;
+	}
+
+	.mechanical_filter_deck{
+		position: absolute;
+		left: 580px;
+		top: 55px;
+	}
+	.mechanical_filter_deck{
+		p{
+			line-height: 23px;
+			color: #fff;
+		}
+	}
+	.coalfilter_deck{
+		position: absolute;
+		right: -80px;
+		top: 191px;
+		opacity: 0;
+		transition: all .9s;
+		transition-delay: 0.3s;
+		.filter_deck{
+			color: #fff;
+			margin-top: 20px;
+		}
+	}
+
+	.multimedia_filter{
+		position: absolute;
+		left: 300px;
+		top: 341px;
+		opacity: 0;
+		transition-delay: 2.2s;
+	}
+	.img_filter_3{
+		position: absolute;
+		top: 357px;
+		left: 190px;
+		opacity: 0;
+		transition-delay: 2.2s;
+	}
+	.multimedia_filter_deck{
+		position: absolute;
+		left: 300px;
+		top: 405px;
+		opacity: 0;
+		transition-delay: 2.2s;
+	}
+
+	.ultraviolet_filter{
+		position: absolute;
+		top: 661px;
+		left: 100px;
+		opacity: 0;
+		transition-delay: .9s;
+	}
+	.img_filter_4{
+		position: absolute;
+		top: 640px;
+		right: 477px;
+		opacity: 0;
+		transition-delay: .9s;
+	}
+	.ultraviolet_filter_deck{
+		position: absolute;
+		top: 661px;
+		left: 600px;
+		opacity: 0;
+		transition-delay: .9s;
+	}
+
+	.iodine_filter{
+		position: absolute;
+		top: 620px;
+		left: 412px;
+		opacity: 0;
+	}
+	.img_filter_5{
+		position: absolute;
+		top: 642px;
+		left: 300px;
+		opacity: 0;
+	}
+	.iodine_filter_deck{
+		position: absolute;
+		top: 695px;
+		left: 415px;
+		opacity: 0;
+	}
+}
+
+
+section#price{
+	border-top: 3px solid #94d6f5;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-image: url("../img/blue.jpg");
+	background-repeat: no-repeat;
+	
+	h1{
+		margin-bottom: 40px;
+		color: #fff;
+	}
+	sup{
+		margin-left: -5px;
+    	font-size: 14px;
+    	margin-right: 6px;
+	}
+	.col-md-3{
+		&:nth-child(2){
+			.product{
+				.product_body{
+					background-image: url("../img/sacura2.png") !important;
+					background-position: center;
+					background-position: top right;
+    				background-size: 36%;
+				}
+			}	
+		}
+
+		&:nth-child(3){
+			.product{
+				.product_body{
+					background-image: url("../img/sacura2.png") !important;
+					    background-position: 0 34px;
+				}
+			}	
+		}
+
+		&:nth-child(4){
+			.product{
+				.product_body{
+					background-image: url("../img/sacura3.png") !important;
+					background-position: right;
+				}
+			}	
+		}
+	}
+	.show_product{
+		display: none;
+	}
+	.product{
+			width: 100%;
+			background-color: #fff;
+			box-shadow: 0 0 25px 0 #58a6cc;
+			text-align: center;
+			color: #0c4a5d;
+			
+			margin-bottom: 20px;
+			
+			
+			.product-header{
+				border-bottom: 10px solid transparent;
+				background-color: #298ce2;
+				padding-top: 15px;
+				.price_title_water{
+					max-width: 120px;
+					margin: auto;
+					margin-bottom: 10px;
+				}
+			}
+
+			.product_body{
+				background-image: url("../img/sacura.png");
+				background-size: contain;
+				background-repeat: no-repeat;
+				padding-bottom: 30px;
+				padding-top: 25px;
+			}
+			p.product_name{
+				font-size: 18px;
+				line-height: 27px;
+				margin: 0;
+				color: #fff;
+			}
+			i.fa{
+				user-select: none;
+				&:hover{
+					cursor: pointer;
+				}
+			}
+
+			i.fa-minus{
+				margin-right: 0;
+				margin-left: 15px;
+			}
+			i.fa-plus{
+				margin-left: 0;
+				margin-right: 15px;
+			}
+			p.number_of_bottles{
+				display: inline;
+				user-select: none;
+			}
+			input.number_of_bottles_value{
+				width: 35px;
+				text-align: center;
+				background-color: transparent;
+				border: none;
+				user-select: none;
+			}
+			p.product_price{
+				font-size: 23px;
+			}
+			p.Saving{
+				margin-top: 30px;
+				margin-bottom: 10px;
+				color: #829aa3;
+			}
+
+			button{
+				background-color: #298ce2;
+				border: none;
+				color: #fff;
+				width: 77%;
+				font-size: 22px;
+			}
+	}
+}
+
+footer{
+	background-color: #5ab3e9;
+	padding: 10px 0;
+	a{
+		color: #fff;
+		font-size: 16px;
+		text-decoration: none;
+	}
+	i{
+		margin-right: 10px;
+	}
+}
+
+footer{
+	.container{
+		padding-top: 10px;
+		.tl{
+			text-align: left;
+		}
+		a{
+			text-align: left;
+			display: inline-flex;
+			text-decoration: none;
+		}
+		a.shop{
+			font-size: 28px;
+			color: #fff;
+			line-height: 19px;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		
+		i.fa-phone{
+			font-size: 22px;
+			margin-right: 5px;
+			color: #fff;
+			display: inline;
+		}
+		
+		i.fa-mobile{
+			font-size: 25px;
+			margin-right: 5px;
+			color: #fff;
+			display: inline;
+		}
+	}
+}
+
+/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+
+.curtains{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.53);
+	z-index: 1;
+}
+
+.popup{
+	width: 90%;
+	max-width: 750px;
+	background-color: blue;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 140px auto;
+	padding: 30px;
+	/*border-radius: 20px;*/
+	background: #f7fdff;
+	background: -moz-linear-gradient(top, #fff 0%, #9ee8fa  198%);
+	background: -webkit-linear-gradient(top, #fff 0%,#9ee8fa  198%);
+	background: linear-gradient(to bottom, #fff 0%,#9ee8fa  198%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fdff', endColorstr='#9ee8fa',GradientType=0 );
+	z-index: 100;
+	.close{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 1;
+		i.fa{
+			font-size: 30px;
+			&:hover{
+				color: red;
+				cursor: pointer;
+			}
+		}
+	}
+	h4{
+		color: #1e7186;
+		font-size: 22px;
+	}
+	ul.contact{
+		list-style: none;
+		margin-left: 60px;
+		li{
+			margin-bottom: 30px;
+			position: relative;
+			&:first-child{
+				margin-top: 30px;
+			}
+			label{
+				display: block;
+				width: 81px;
+				position: absolute;
+				top: 7px;
+				left: -100px;
+				text-align: right;
+				font-size: 12px;
+			}
+		}
+	}
+	span.price_info{
+		font-size: 19px;
+		span{
+			color: #34a12c;
+			span.small_text{
+				font-size: 12px;
+			}
+		}
+	}
+	p.tooltip_p{
+		font-size: 12px;
+		margin: 0;
+	}
+	input.number_of_bottles_values{
+		margin-top: 20px;
+		width: 55px;
+		margin-left: 10px;
+		margin-right: 10px;
+		text-align: center;
+	}
+	input.contact_input,textarea.contact_input{
+		width: 300px;
+		height: 35px;
+		padding-left: 10px;
+	}
+	textarea.contact_input{
+		height: 100px;
+		min-height: 100px;
+		max-height: 100px;
+		max-width: 300px;
+		min-width: 300px;
+	}
+	p.min_number{
+		margin-left: 20%;
+		font-size: 13px;
+	}
+	button.sendpop_up{
+		padding: 10px 60px;
+		border: none;
+		color: #fff;
+		font-size: 20px;
+		background: #1493e0;
+		margin-left: 20%;
+		&:hover{
+			background-color: #2777ca;
+		}
+	}
+
+	img.img_popup{
+		max-width: 300px;
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 30px;
+	}
+}
+
+
+.callback_modal{
+	width: 90%;
+	max-width: 350px;
+	background-color: blue;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 60px auto;
+	padding: 30px;
+	/*border-radius: 20px;*/
+	background: #f7fdff;
+	background: -moz-linear-gradient(top, #fff 0%, #9ee8fa  198%);
+	background: -webkit-linear-gradient(top, #fff 0%,#9ee8fa  198%);
+	background: linear-gradient(to bottom, #fff 0%,#9ee8fa  198%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fdff', endColorstr='#9ee8fa',GradientType=0 );
+	z-index: 100;
+	.close{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 1;
+		i.fa{
+			font-size: 30px;
+			&:hover{
+				color: red;
+				cursor: pointer;
+			}
+		}
+	}
+
+	h2{
+		text-align: center;
+		margin-bottom: 20px;
+		color: #1e7186;
+	}
+	input{
+		margin-bottom: 15px;
+		height: 45px;
+	}
+	button{
+		margin-top: 20px;
+		color: #fff;
+		background-color: #1493e0;
+		border: none;
+		padding: 10px 45px;
+		font-size: 21px;
+		box-shadow: 0 0 15px -1px #666669;
+	}
+}
+
+
+/*============    	АДАПТИВ    ===========*/
+
+
+@media(min-width:320px) and (max-width:480px) {
+	.section3{
+		height: 950px;
+	}
+	canvas[width="160"]{
+		display: none !important;
+	}
+	header{
+		.wrapper_geader_animation{
+			width: 100%;
+		}
+		.callback{
+			display: none;
+		}
+		.callmy{
+			margin-left: 23px;
+			span{
+				margin-left: -10px;
+				font-size: 14px !important;
+			}
+		}
+		img.logo{
+			margin-left: -11px;
+		}
+		.header_content{
+			.col-md-1{
+				margin-top: -33px;
+				.img291m{
+					display: none;
+				}
+			}
+			img.header_water_img{
+				margin: auto;
+			}
+			.water_deck_title{
+				margin: 0;
+				text-align: center;
+				img.logo_blue.img-responsive{
+					margin: 0 auto;
+				}
+			}
+		}
+	}  
+
+	section#Chemical_Warehouse{
+		img.img_molecyla{
+			display: none;
+		}
+		.col-md-2.col-md-offset-5{
+			max-width: 500px;
+			margin: auto;
+			.molecula{
+				&:nth-child(1){
+					margin-left: Calc(100% - 150px);
+				}
+				&:nth-child(2){
+					margin-left: -15px;
+				}
+				&:nth-child(3){
+					margin-left: Calc(100% - 150px);
+				}
+			}
+		}
+		.col-md-2.right_molecul{
+			max-width: 500px;
+			margin: auto;
+			.molecula{
+				&:nth-child(2){
+					margin-left: Calc(100% - 150px);
+				}
+			}
+		}
+	}
+
+	section#Stages_of_cleaning{
+		#why-content{
+			display: none;
+		}
+		.show_mobile{
+			display: block;
+		}
+	}
+
+	section#price{
+		.product{
+			display: none;
+		}
+		.show_product{
+			display: block;
+		}
+	}
+
+	footer{
+		.tl{
+			img{
+				max-width: 150px;
+				margin: auto;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.callback_modal{
+		button{
+			width: 100%;
+			padding: 10px;
+		} 
+	}
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	
+	.section3{
+		height: 950px;
+	}
+	canvas[width="160"]{
+		display: none !important;
+	}
+	header{
+		.wrapper_geader_animation{
+			width: 100%;
+		}
+		.callback{
+			display: none;
+		}
+		.callmy{
+			margin-left: 23px;
+			span{
+				margin-left: -10px;
+				font-size: 14px !important;
+			}
+		}
+		img.logo{
+			margin-left: -11px;
+		}
+		.header_content{
+			.col-md-1{
+				margin-top: 0%;
+				.img291m{
+					display: none;
+				}
+			}
+			img.header_water_img{
+				margin: auto;
+				max-width: 450px;
+			}
+			.water_deck_title{
+				margin: 0;
+				text-align: center;
+				img.logo_blue.img-responsive{
+					margin: 0 auto;
+				}
+			}
+		}
+	} 
+
+	section#price{
+			.product{
+				display: none;
+			}
+			.show_product{
+				display: block;
+			}
+		}
+ 
+
+	section#Chemical_Warehouse{
+		img.img_molecyla{
+			display: none;
+		}
+		.col-md-2.col-md-offset-5{
+			margin: auto;
+			max-width: 500px;
+			.molecula{
+				&:nth-child(1){
+					margin-left: Calc(100% - 150px);
+				}
+				&:nth-child(2){
+					margin-left: -15px;
+				}
+				&:nth-child(3){
+					margin-left: Calc(100% - 150px);
+				}
+			}
+		}
+		.col-md-2.right_molecul{
+			max-width: 500px;
+			margin: auto;
+			.molecula{
+				&:nth-child(2){
+					margin-left: Calc(100% - 150px);
+				}
+			}
+		}
+	}
+
+	section#Stages_of_cleaning{
+		#why-content{
+			display: none;
+		}
+		.show_mobile{
+			display: block;
+			li{
+				margin-bottom: 20px;
+			}
+		}
+	}
+	footer{
+		.col-md-2.tl{
+			img.img-responsive{
+				max-width: 200px;
+    			margin: auto;
+			}
+		}
+	}
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	header{
+		.header_content{
+			.col-md-1{
+				.img291m{
+					max-width: 70px;
+					margin-left: 0;
+					margin-top: -40px;
+				}
+			}
+			.water_deck_title{
+				margin-top: 10%;
+				img.logo_blue{
+					max-width: 220px;
+				}
+			}
+		}
+	}
+	section#Stages_of_cleaning{
+		#why-content{
+			display: none;
+		}
+		.show_mobile{
+			display: block;
+		}
+	}
+
+	section#Chemical_Warehouse{
+		img.img_molecyla{
+			display: none;
+		}
+		.col-md-2.col-md-offset-5{
+			max-width: 500px;
+			margin: auto;
+			.molecula{
+				&:nth-child(1){
+					margin-left: Calc(100% - 150px);
+				}
+				&:nth-child(2){
+					margin-left: -15px;
+				}
+				&:nth-child(3){
+					margin-left: Calc(100% - 150px);
+				}
+			}
+		}
+		.col-md-2.right_molecul{
+			max-width: 500px;
+			margin: auto;
+			.molecula{
+				&:nth-child(2){
+					margin-left: Calc(100% - 150px);
+				}
+			}
+		}
+	}
+
+	footer{
+		.col-md-2.tl{
+			margin-bottom: 20px;
+			img.img-responsive{
+				max-width: 200px;
+    			margin: auto;
+			}
+		}
+		.one_phone{
+			text-align: center;
+		}
+		.mobile_phone{
+			text-align: right;
+		}
+		.shop_wrap{
+			text-align: center;
+			a{
+				margin-top: 7px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.popup{
+	 	margin-top: 20px;
+	 	height: 95%;
+	 	overflow-y: scroll;
+	 }
+ .popup p.min_number{
+ 	margin-left: 0;
+ 	text-align: center;
+ }
+ .popup button.sendpop_up{
+ 	display: block;
+ 	margin: auto;
+ }
+ .popup img.img_popup{
+ 	display: none;
+ }
+ .popup input.contact_input, .popup textarea.contact_input{
+ 	width: 100%;
+ }
+ .popup textarea.contact_input{
+ 	min-width: 100px;
+ 	max-width: 100%;
+ }
+}
+
+@media(min-width:768px) and (max-width:1200px) {
+	.popup{
+		margin-top: 20px;
+	}
+}
+
+@media(min-width:993px) and (max-width:1200px) {
+	section#Stages_of_cleaning{
+		#why-content{
+			margin-left: -119px;
+		}
+		.coalfilter_deck{
+			right: -59px;
+		}
+	}
+	footer{
+		a{
+			font-size: 15px;
+		}
+	}
+}
+
+
+
