@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Заголовок </title>
+    <title>Vesna </title>
+
+    <meta name="Keywords" content="HTML, META, метатег, тег, поисковая система">
+    <meta name="description" content="Сайт об HTML и создании сайтов">
+
+    <meta property="og:image" content="img/favicon/114_114.png"/>
+    <meta property="og:image" content="img/favicon/114_114.png"/>
+
+    <link rel="shortcut icon" href="img/favicon/32_32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/32_32.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72_72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114_114.png">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +38,7 @@
   <body>
 
   <div class="loaderArea">
-  <img src="img/title_blue.png" alt="">
+  <img src="img/title_blue.png" alt="Загрузка">
   </div>
 
   <div id="my-page">  
@@ -51,10 +62,10 @@
             </div>
             <div class="col-md-3 col-sm-1 text-right">
               <a href="#my-menu" class="hamburger hamburger--collapse">
-                      <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                    </span>
-                    </a>
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </a>
               <nav id="my-menu">
                 <ul id ="test_ul_m">
                   <li><a href="#my-page">Головна</a></li>
@@ -133,14 +144,14 @@
             
             <div class="molecula">Ca <sup>2+</sup>20-80 </div>
             <div class="molecula">Mg <sup>2+</sup>10-30  </div>
-            <div class="molecula">Fe <sup>+</sup> < 0,2</div>
+            <div class="molecula">Fe <sup>+</sup> &lt 0,2</div>
 
           </div>
           <div class="col-md-2 right_molecul">
             
-            <div class="molecula">HCO <sup>-</sup> <sub>8</sub> < 325 </div>
-            <div class="molecula">SO <sup>2-</sup><sub>4</sub> < 250</div>
-            <div class="molecula">CI <sup>-</sup> < 250</div>
+            <div class="molecula">HCO <sup>-</sup> <sub>8</sub> &lt 325 </div>
+            <div class="molecula">SO <sup>2-</sup><sub>4</sub> &lt 250</div>
+            <div class="molecula">CI <sup>-</sup> &lt 250</div>
 
           </div>
         </div>
@@ -322,7 +333,7 @@
                 
                 <p class="product_name number_of_bottles"> 
                   <i class="fa fa-minus" aria-hidden="true"></i>
-                  <input type="text" class="number_of_bottles_value" pattern="[0-9]{10}" onkeypress='validate(event)' value="1" readonly></input>
+                  <input type="text" class="number_of_bottles_value" pattern="[0-9]{10}" onkeypress='validate(event)' value="1" readonly>
                   <i class="fa fa-plus" aria-hidden="true" ></i>
                 </p>
                 
@@ -350,16 +361,16 @@
             </div>
 
             <div class="col-md-3 col-sm-4">
-              <a href="tel:8877 "><i class="fa fa-mobile"></i>8877 callback  <br>безкоштовно з мобільного</a>
+              <a href="tel:8877" type="tel"><i class="fa fa-mobile"></i>8877 callback  <br>безкоштовно з мобільного</a>
             </div>
 
         <div class="col-md-2 col-sm-4 one_phone">
-              <a href="tel:(067) 555-88-77"><i class="fa fa-mobile"></i>(067) 555-88-77 <br>для мобільного</a>
+              <a href="tel:(067) 555-88-7" type="tel"><i class="fa fa-mobile"></i>(067) 555-88-77 <br>для мобільного</a>
             </div>
 
             <div class="col-md-2 col-sm-4 mobile_phone">
-              <a href="tel:(044) 455-88-38 "><i class="fa fa-phone"></i>(044) 455-88-38 </a> <br>
-              <a href="tel:(044) 593-3-777 "><i class="fa fa-phone"></i>(044) 593-3-777 </a> <br>
+              <a href="tel:(044) 455-88-38" type="tel"><i class="fa fa-phone"></i>(044) 455-88-38 </a> <br>
+              <a href="tel:(044) 593-3-777" type="tel"><i class="fa fa-phone"></i>(044) 593-3-777 </a> <br>
               
             </div>
 
@@ -379,8 +390,8 @@
       <h4>Швидке замовлення води</h4>
       <p class="tooltip_p">* - поля обов'язкові для заповнення.</p>
       <p class="tooltip_p">Ціна змінюється в залежності від кількості замовлених бутлів!</p>
-      <form action="">
-        <span class="price_info">Бутлів</span><input type="text" class="number_of_bottles_values" value="1" onkeypress="validate(event)"><span class="price_info" required>Ціна: <span class="total_price">82 <span class="small_text">грн.</span></span></span>
+      <form>
+        <span class="price_info">Бутлів</span><input type="text" class="number_of_bottles_values" value="1" onkeypress="validate(event)"><span class="price_info">Ціна: <span class="total_price">82 <span class="small_text">грн.</span></span></span>
 
         <span class="price_bottle">Ціна за бутель: <span class="price_bottle_number">82 грн.</span></span>
 
@@ -395,7 +406,7 @@
           </li>
           <li>
             <label class="ow_al" for="contact-message">Повідомлення<span class="ow_blue">*</span></label>
-            <textarea type="text" id="contact-message" class="contact-input contact_input" name="name" tabindex="1001"></textarea>
+            <textarea id="contact-message" class="contact-input contact_input" name="name" tabindex="1001"></textarea>
           </li>
         </ul>
         <p class="min_number">Мінімальне замовлення - 1 бутель</p>
